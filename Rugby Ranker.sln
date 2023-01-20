@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rugby Ranker", "Rugby Ranker\Rugby Ranker.csproj", "{FB2B0503-70EE-427F-AD76-2EBCA2F0F5C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB2B0503-70EE-427F-AD76-2EBCA2F0F5C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB2B0503-70EE-427F-AD76-2EBCA2F0F5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB2B0503-70EE-427F-AD76-2EBCA2F0F5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB2B0503-70EE-427F-AD76-2EBCA2F0F5C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DADEAAEC-922C-46AF-B75B-E9D132E2EACF}
+	EndGlobalSection
+EndGlobal

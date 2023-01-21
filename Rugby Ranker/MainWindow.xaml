@@ -43,10 +43,10 @@
                 <Button x:Name="ManageTeamsRemoveAllTeamsButton" Content="Remove All" HorizontalAlignment="Left" Margin="120,210,0,0" VerticalAlignment="Top" Background="#FF00FFF9" FontFamily="Arial Black" Width="110" Height="20" Click="ManageTeamsRemoveAllTeamsButton_Click"/>
             </Grid>
         </Grid>
-        <Grid x:Name="MatchUpdateGrid" Width="463" Height="500" Margin="140,60,30,40" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Grid x:Name="MatchUpdateGrid" Width="463" Height="500" Margin="140,60,30,40" HorizontalAlignment="Left" VerticalAlignment="Top" d:IsHidden="True">
             <Button x:Name="AddMatchButton" Content="Add Match" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Height="20" FontFamily="Arial Black" Background="#FFFF7500" Click="AddMatchButton_Click" BorderBrush="{x:Null}" />
             <Button x:Name="HistoryButton" Content="History" HorizontalAlignment="Left" Margin="120,0,0,0" VerticalAlignment="Top" Background="#FFFFF500" Width="110" Height="20" FontFamily="Arial Black" Click="HistoryButton_Click" BorderBrush="{x:Null}"/>
-            <Grid x:Name="AddMatchGrid" Width="450" Height="400" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,30,0,0">
+            <Grid x:Name="AddMatchGrid" Width="450" Height="400" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,30,0,0" d:IsHidden="True">
                 <Label x:Name="AddMatchHomeTeamLabel" Content="Home Team" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="White" Width="100" Height="30" HorizontalContentAlignment="Center"/>
                 <Label x:Name="AddMatchHomeTeamScoreLabel" Content="Score Home" HorizontalAlignment="Left" Margin="110,0,0,0" VerticalAlignment="Top" Width="90" Height="30" Foreground="White" FontFamily="Arial Black" HorizontalContentAlignment="Center"/>
                 <Label x:Name="AddTeamsAwayTeamScoreLabel" Content="Score Away" Margin="210,0,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Arial Black" Height="30" Width="90" HorizontalAlignment="Left" HorizontalContentAlignment="Center"/>
@@ -84,9 +84,32 @@
                 <Button x:Name="HistoryDeleteButton" Content="Delete Record" HorizontalAlignment="Left" Margin="0,230,0,0" VerticalAlignment="Top" Width="110" Height="20" Background="#FF88FF00" FontFamily="Arial Black" Click="HistoryDeleteButton_Click"/>
                 <Button x:Name="HistoryEditMatchButton" Content="Edit Match" HorizontalAlignment="Left" Margin="120,230,0,0" VerticalAlignment="Top" Width="110" Height="20" Background="#FFC300FF" FontFamily="Arial Black" Click="HistoryEditMatchButton_Click"/>
             </Grid>
-            <Grid x:Name="EditTeamsGrid" Background="#FFD09494" Width="400" Height="400" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,30,0,0" d:IsHidden="True"/>
         </Grid>
-        <Grid x:Name="TeamsGrid" Background="#FFE404FD" Width="450" Height="500" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,60,30,40" d:IsHidden="True"/>
+        <Grid x:Name="TeamsGrid" Width="450" Height="500" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,60,30,40">
+            <Button x:Name="TeamsListButton" Content="Team List" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Height="20" Background="#FF94FF00" FontFamily="Arial Black" Click="TeamsListButton_Click"/>
+            <Grid x:Name="TeamListGrid" Width="400" Height="400" Margin="0,30,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" d:IsHidden="True">
+                <ListBox x:Name="TeamlistItemBoxTeamsGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Width="230" Height="200" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Button x:Name="ViewTeamProfileButton" Content="View Team" HorizontalAlignment="Left" Margin="0,210,0,0" VerticalAlignment="Top" Width="230" Background="#FFFF0069" FontFamily="Arial Black" Click="ViewTeamProfileButton_Click"/>
+            </Grid>
+            <Grid x:Name="TeamProfileGrid" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Height="400" Margin="0,30,0,0">
+                <Label x:Name="ProfileTeamNameLabel" Content="Team Name" HorizontalAlignment="Left" Margin="130,0,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Padding="0,0,5,5" Width="130" Height="30" Foreground="White"/>
+                <Label x:Name="ProfileDeafaultTeamRating" Content="Default Rating" HorizontalAlignment="Left" Margin="130,20,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Width="130" Height="30" Padding="0,0,5,5" Foreground="White"/>
+                <Label x:Name="ProfileCalculatedRatingLabel" Content="Calculated Rating" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial Black" Padding="0,0,0,0" Margin="130,40,0,0" Width="130" Height="20" Foreground="White"/>
+                <Label Content="Team:" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial Black" Width="130" Padding="0,0,0,0" Foreground="White"/>
+                <Label Content="Default Rating:" HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Width="130" Padding="0,0,0,0" Foreground="White"/>
+                <Label Content="Calculated Rating:" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" FontFamily="Arial Black" Width="130" Padding="0,0,0,0" Foreground="White"/>
+                <Label Content="Won:" HorizontalAlignment="Left" Margin="0,60,0,0" VerticalAlignment="Top" Foreground="White" Width="130" Height="20" Padding="0,0,0,0" FontFamily="Arial Black"/>
+                <Label Content="Draw:" HorizontalAlignment="Left" Margin="0,80,0,0" VerticalAlignment="Top" Foreground="White" Width="130" Height="20" Padding="0,0,0,0" FontFamily="Arial Black"/>
+                <Label Content="Lost:" HorizontalAlignment="Left" Margin="0,100,0,0" VerticalAlignment="Top" Foreground="White" Width="130" Height="20" Padding="0,0,0,0" FontFamily="Arial Black"/>
+                <Label Content="Win Percentage:" HorizontalAlignment="Left" Margin="0,120,0,0" VerticalAlignment="Top" Foreground="White" Width="130" Height="20" Padding="0,0,0,0" FontFamily="Arial Black"/>
+                <Label x:Name="ProfileWonLabel" Content="MatchesWon" HorizontalAlignment="Left" Margin="130,60,0,0" VerticalAlignment="Top" Foreground="White" Width="130" Height="20" Padding="0,0,0,0" FontFamily="Arial Black"/>
+                <Label x:Name="ProfileDrawLabel" Content="Matches Draw" HorizontalAlignment="Left" Margin="130,80,0,0" VerticalAlignment="Top" Foreground="White" Width="130" Height="20" Padding="0,0,0,0" FontFamily="Arial Black"/>
+                <Label x:Name="ProfileLostLabel" Content="Matches Lost" HorizontalAlignment="Left" Margin="130,100,0,0" VerticalAlignment="Top" Foreground="White" Width="130" Height="20" Padding="0,0,0,0" FontFamily="Arial Black"/>
+                <Label x:Name="ProfileWonPercentageLabel" Content="Matches Won Percentage" HorizontalAlignment="Left" Margin="130,120,0,0" VerticalAlignment="Top" Foreground="White" Width="130" Height="20" Padding="0,0,0,0" FontFamily="Arial Black"/>
+                <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" Width="400" Height="200" Margin="0,140,0,0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Button x:Name="EditProfileButton" Content="Edit Profile" HorizontalAlignment="Left" Margin="0,350,0,0" VerticalAlignment="Top" Width="110" Height="20" Background="#FFB7FF00" FontFamily="Arial Black"/>
+            </Grid>
+        </Grid>
 
     </Grid>
 </Window>

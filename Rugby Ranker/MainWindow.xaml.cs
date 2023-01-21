@@ -35,17 +35,8 @@ namespace Rugby_Ranker
             HideRemoveTeamOptions();
             HideAddMatchGrid();
             HideHistoryGrid();
-            for (int i = 0; i < ProgramMethods.RugbyTeams.Length; i++)
-            {
-                if (ProgramMethods.RugbyTeams[i].GetIsTeamAccountActivated() == true)
-                {
-                    Console.WriteLine(ProgramMethods.RugbyTeams[i].GetTeamName().ToString() + ": R = " + ProgramMethods.RugbyTeams[i].GetRating().ToString() + " CR = " + Convert.ToDouble(ProgramMethods.RugbyTeams[i].GetCalculatedRating()) );
-                }
-            }
-            for (int i = 0; i <ProgramMethods.TeamDescendingOrderString.Count; i++) 
-            {
-                Console.WriteLine(ProgramMethods.TeamDescendingOrderString[i].ToString());
-            }
+            HideTeamProfileGrid();
+            HideTeamListGrid();
         }
 
         private void UpdateListBoxes() 
@@ -122,6 +113,28 @@ namespace Rugby_Ranker
             MatchUpdateGrid.Visibility = Visibility.Collapsed;
         }
 
+        //Show TeamListGrid
+        private void ShowTeamListGrid() 
+        {
+            TeamListGrid.Visibility = Visibility.Visible;
+        }
+
+        private void HideTeamListGrid() 
+        {
+            TeamListGrid.Visibility = Visibility.Collapsed;
+        }
+
+        //Show Team Team Profile
+        private void ShowTeamProfileGrid() 
+        {
+            TeamProfileGrid.Visibility = Visibility.Visible;
+        }
+
+        private void HideTeamProfileGrid() 
+        {
+            TeamProfileGrid.Visibility = Visibility.Collapsed;
+        }
+
         //Show Add Matches
         private void ShowAddMatchGrid() 
         {
@@ -142,17 +155,6 @@ namespace Rugby_Ranker
         private void HideHistoryGrid() 
         {
             History_Grid.Visibility = Visibility.Collapsed;
-        }
-
-        //Show Edit Team Records
-        private void ShowEditTeamsGrid() 
-        {
-            EditTeamsGrid.Visibility= Visibility.Visible;
-        }
-
-        private void HideEditTeamsGrid() 
-        {
-            EditTeamsGrid.Visibility = Visibility.Collapsed;
         }
 
         //Teams options
@@ -328,7 +330,6 @@ namespace Rugby_Ranker
             HideManageTeamsOptions();
             ShowUpdateMatchUpdateOptions();
             HideTeamsOptions();
-            HideEditTeamsGrid();
 
             UpdateListBoxes();
         }
@@ -359,6 +360,7 @@ namespace Rugby_Ranker
             HideManageTeamsOptions();
             HideUpdateMatchUpdateOptions();
             HideTeamsOptions();
+            TeamsListButton.IsEnabled = true;
         }
 
         private void MainMenuButton_MouseEnter(object sender, MouseEventArgs e)
@@ -378,7 +380,6 @@ namespace Rugby_Ranker
 
             ShowAddTeamOptions();
             HideRemoveTeamOptions();
-            HideEditTeamsGrid();
         }
 
         private void ManageTeamsRemoveTeam_Click(object sender, RoutedEventArgs e)
@@ -415,7 +416,6 @@ namespace Rugby_Ranker
         {
             ShowAddMatchGrid();
             HideHistoryGrid();
-            HideEditTeamsGrid();
 
             AddMatchButton.IsEnabled = false;
             HistoryButton.IsEnabled = true;
@@ -425,7 +425,6 @@ namespace Rugby_Ranker
         {
             HideAddMatchGrid();
             ShowHistoryGrid();
-            HideEditTeamsGrid();
 
             AddMatchButton.IsEnabled = true;
             HistoryButton.IsEnabled = false;
@@ -435,7 +434,6 @@ namespace Rugby_Ranker
 
         private void HistoryEditMatchButton_Click(object sender, RoutedEventArgs e)
         {
-            ShowEditTeamsGrid();
             StoreData.StoreProgramData();
         }
 
@@ -452,6 +450,20 @@ namespace Rugby_Ranker
             UpdateListBoxes();
             RatingSystem.CalculateRecords();
             StoreData.StoreProgramData();
+        }
+
+        private void TeamsListButton_Click(object sender, RoutedEventArgs e)
+        {
+            ShowTeamListGrid();
+            HideTeamProfileGrid();
+            TeamsListButton.IsEnabled = false;
+        }
+
+        private void ViewTeamProfileButton_Click(object sender, RoutedEventArgs e)
+        {
+            ShowTeamProfileGrid();
+            HideTeamListGrid();
+            TeamsListButton.IsEnabled = true;
         }
     }
 }

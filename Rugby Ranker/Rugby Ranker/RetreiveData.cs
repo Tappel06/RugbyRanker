@@ -43,7 +43,7 @@ namespace Rugby_Ranker
             while (Data != endDocumentChar) 
             {
 
-                if (Data != ',') 
+                if (Data != '%') 
                 {
                     wordBuilder = wordBuilder + Data.ToString();
                 }
@@ -98,7 +98,7 @@ namespace Rugby_Ranker
 
                 if (keyWord == teamTriger) 
                 {
-                    if (Data == ',')
+                    if (Data == '%')
                     {
                         teamNames.Add(wordBuilder);
                         wordBuilder = "";
@@ -107,7 +107,7 @@ namespace Rugby_Ranker
 
                 if (keyWord == scoreTrigger) 
                 {
-                    if (Data == ',')
+                    if (Data == '%')
                     {
                         teamScores.Add(wordBuilder);
                         wordBuilder = "";
@@ -116,7 +116,7 @@ namespace Rugby_Ranker
 
                 if (keyWord == homeTeam) 
                 {
-                    if (Data == ',') 
+                    if (Data == '%') 
                     {
                         homeTeamNames.Add(wordBuilder);
                         wordBuilder = "";
@@ -125,7 +125,7 @@ namespace Rugby_Ranker
 
                 if (keyWord == homeTeamScore) 
                 {
-                    if(Data == ',') 
+                    if(Data == '%') 
                     {
                         homeTeamScores.Add(wordBuilder);
                         wordBuilder = "";
@@ -134,7 +134,7 @@ namespace Rugby_Ranker
 
                 if (keyWord == awayTeam) 
                 {
-                    if (Data == ',') 
+                    if (Data == '%') 
                     {
                         awayTeamNames.Add(wordBuilder);
                         wordBuilder = "";
@@ -143,7 +143,7 @@ namespace Rugby_Ranker
 
                 if (keyWord == awayTeamScore) 
                 {
-                    if (Data == ',') 
+                    if (Data == '%') 
                     {
                         awayTeamScores.Add(wordBuilder);
                         wordBuilder = "";
@@ -152,7 +152,7 @@ namespace Rugby_Ranker
 
                 if (keyWord == date) 
                 {
-                    if (Data == ',') 
+                    if (Data == '%') 
                     {
                         dates.Add(wordBuilder);
                         wordBuilder = "";
@@ -161,7 +161,7 @@ namespace Rugby_Ranker
 
                 if (keyWord == hashCode) 
                 {
-                    if (Data == ',') 
+                    if (Data == '%') 
                     {
                         hashCodes.Add(wordBuilder);
                         wordBuilder = "";

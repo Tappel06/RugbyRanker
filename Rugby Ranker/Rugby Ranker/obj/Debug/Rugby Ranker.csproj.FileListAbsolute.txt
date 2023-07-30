@@ -14,19 +14,19 @@ C:\Users\thnsp\Desktop\Rugby Ranker App\Rugby Ranker\Rugby Ranker\obj\Debug\Rugb
 C:\Users\thnsp\Desktop\Rugby Ranker App\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.csproj.CoreCompileInputs.cache
 C:\Users\thnsp\Desktop\Rugby Ranker App\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.exe
 C:\Users\thnsp\Desktop\Rugby Ranker App\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.pdb
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\bin\Debug\Rugby Ranker.exe.config
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\bin\Debug\Rugby Ranker.exe
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\bin\Debug\Rugby Ranker.pdb
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.csproj.AssemblyReference.cache
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.csproj.SuggestedBindingRedirects.cache
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\obj\Debug\MainWindow.g.cs
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\obj\Debug\App.g.cs
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker_MarkupCompile.cache
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker_MarkupCompile.lref
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\obj\Debug\MainWindow.baml
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.g.resources
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby_Ranker.Properties.Resources.resources
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.csproj.GenerateResource.cache
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.csproj.CoreCompileInputs.cache
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.exe
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.pdb
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\bin\Debug\Rugby Ranker.exe.config
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\bin\Debug\Rugby Ranker.exe
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\bin\Debug\Rugby Ranker.pdb
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.csproj.AssemblyReference.cache
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.csproj.SuggestedBindingRedirects.cache
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\obj\Debug\MainWindow.g.cs
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\obj\Debug\App.g.cs
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker_MarkupCompile.cache
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker_MarkupCompile.lref
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\obj\Debug\MainWindow.baml
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.g.resources
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby_Ranker.Properties.Resources.resources
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.csproj.GenerateResource.cache
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.csproj.CoreCompileInputs.cache
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.exe
+C:\Users\thnsp\Desktop\European Rugby\Rugby Ranker\Rugby Ranker\obj\Debug\Rugby Ranker.pdb

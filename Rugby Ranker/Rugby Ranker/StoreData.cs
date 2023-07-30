@@ -30,7 +30,8 @@ namespace Rugby_Ranker
             {
                 if (ProgramMethods.RugbyTeams[i].GetIsTeamAccountActivated() == true) 
                 {
-                    saveDataBuilder = saveDataBuilder + ProgramMethods.RugbyTeams[i].GetTeamName().ToString() +",";
+                    saveDataBuilder = saveDataBuilder + ProgramMethods.RugbyTeams[i].GetTeamName().ToString() +"%";
+
                 }
             }
             //Save Team Scores
@@ -39,49 +40,50 @@ namespace Rugby_Ranker
             {
                 if (ProgramMethods.RugbyTeams[i].GetIsTeamAccountActivated() == true)
                 {
-                    saveDataBuilder = saveDataBuilder + ProgramMethods.RugbyTeams[i].GetRating().ToString() + ",";
+                    //saveDataBuilder = saveDataBuilder + ProgramMethods.RugbyTeams[i].GetRating().ToString() + "%";
+                    saveDataBuilder = saveDataBuilder + Math.Round(ProgramMethods.RugbyTeams[i].GetRating(), 2).ToString() + "%";
                 }
             }
             //Save Records Home Team Names
             saveDataBuilder = saveDataBuilder + homeTeam;
             for (int i = 0; i < MatchDatabase.CountTotalRecords(); i++) 
             {
-                saveDataBuilder = saveDataBuilder + MatchDatabase.GetHomeTeamName(i).ToString() + ",";
+                saveDataBuilder = saveDataBuilder + MatchDatabase.GetHomeTeamName(i).ToString() + "%";
             }
 
             //Save Records Away Team Names
             saveDataBuilder = saveDataBuilder + awayTeam;
             for (int i = 0; i <  MatchDatabase.CountTotalRecords(); i++) 
             {
-                saveDataBuilder = saveDataBuilder + MatchDatabase.GetAwayTeamName(i).ToString() + ",";
+                saveDataBuilder = saveDataBuilder + MatchDatabase.GetAwayTeamName(i).ToString() + "%";
             }
 
             //Save Records Home Team Scores
             saveDataBuilder = saveDataBuilder + homeTeamScore;
             for (int i = 0; i < MatchDatabase.CountTotalRecords(); i++) 
             {
-                saveDataBuilder = saveDataBuilder + MatchDatabase.GetHomeTeamScore(i).ToString() + ",";
+                saveDataBuilder = saveDataBuilder + MatchDatabase.GetHomeTeamScore(i).ToString() + "%";
             }
 
             //Save Records Away Team Score
             saveDataBuilder = saveDataBuilder + awayTeamScore;
             for (int i = 0; i < MatchDatabase.CountTotalRecords(); i++) 
             {
-                saveDataBuilder = saveDataBuilder + MatchDatabase.GetAwayTeamScore(i).ToString() + ",";
+                saveDataBuilder = saveDataBuilder + MatchDatabase.GetAwayTeamScore(i).ToString() + "%";
             }
 
             //Save Records Dates
             saveDataBuilder = saveDataBuilder + date;
             for (int i = 0; i < MatchDatabase.CountTotalRecords(); i++) 
             {
-                saveDataBuilder = saveDataBuilder + MatchDatabase.GetMatchDate(i).ToShortDateString() + ",";
+                saveDataBuilder = saveDataBuilder + MatchDatabase.GetMatchDate(i).ToShortDateString() + "%";
             }
 
             //Save Records HashCodes
             saveDataBuilder = saveDataBuilder + hashCode;
             for(int i = 0; i < MatchDatabase.CountTotalRecords(); i++) 
             {
-                saveDataBuilder = saveDataBuilder + MatchDatabase.GetHashID(i).ToString() + ",";
+                saveDataBuilder = saveDataBuilder + MatchDatabase.GetHashID(i).ToString() + "%";
             }
 
             saveDataBuilder = saveDataBuilder + "@";

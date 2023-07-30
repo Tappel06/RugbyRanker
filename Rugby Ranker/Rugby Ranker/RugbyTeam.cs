@@ -44,24 +44,24 @@ namespace Rugby_Ranker
         //Team Rating
         public double GetRating() 
         {
-            return rating;
+            return Math.Round(rating, 2);
         }
 
         public void SetRating(double rate) 
         {
-            rating = rate;
+            rating = Math.Round(rate, 2);
         }
 
         //Team calculate rating
 
         public double GetCalculatedRating() 
         {
-            return calculatedRating;
+            return Math.Round(calculatedRating, 2);
         }
 
         public void setCalculatedRating(double value) 
         {
-            calculatedRating = value;
+            calculatedRating = Math.Round(value, 2);
         }
 
         //Team id

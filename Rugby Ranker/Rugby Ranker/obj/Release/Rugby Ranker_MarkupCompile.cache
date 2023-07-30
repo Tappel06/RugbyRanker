@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\obj\Debug\
+C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\obj\Release\
 Rugby_Ranker
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Ranker\App.xaml
 1219584333
 
@@ -16,5 +16,5 @@ C:\Users\thnsp\Documents\GitHub\Rugby Ranker\RugbyRanker\Rugby Ranker\Rugby Rank
 13-1310406943
 MainWindow.xaml;
 
-False
+True
 
